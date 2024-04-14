@@ -32,6 +32,6 @@
         Phone must be 10 digits
       </div>
     </div>
-    <button type="submit" class="btn btn-primary" [disabled]="!userForm.valid">Submit</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!userForm.valid && emailExist">Submit</button>
   </form>
 </div>
