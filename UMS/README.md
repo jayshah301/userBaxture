@@ -42,3 +42,13 @@ Validation: The application checks whether a user already exists before adding a
 Data Passing: It uses a DataService to pass data between components, facilitating communication between them.
 
 Styling: Basic styling is applied to the application using Bootstrap to make it visually appealing.
+
+loadUsersFromLocalStorage(): Loads user data from the local storage if available.
+getUserList(): Returns an observable stream of user data.
+deleteUser(userId: any): Deletes a user with the specified ID.
+generateUniqueUserID(): Generates a unique user ID.
+addUser(user: any): Adds a new user to the data service.
+updateUser(user: User): Updates an existing user's information.
+saveUsersToLocalStorage(): Saves user data to the local storage.
+getUserById(userId: string): User | undefined: Retrieves a user by their ID.
+checkUserexist(useremail: string): Checks if a user with the specified email address already exists.
