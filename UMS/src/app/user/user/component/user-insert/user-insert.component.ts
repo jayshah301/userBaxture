@@ -15,6 +15,7 @@ export class UserInsertComponent implements OnInit {
   userForm!: FormGroup;
   isEditMode = false;
   userId!: string;
+  emailExist = false;
   constructor(private fb: FormBuilder, private dataService: DataServiceService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -28,6 +29,12 @@ export class UserInsertComponent implements OnInit {
           this.userForm.patchValue(user);
         }
       }
+    })
+
+    this.userForm.get('email')?.valueChanges.subscribe(email=>{
+      this.emailExist = this.dataService.checkUserexist(email)
+     
+
     })
   }
   initializeForm() {
