@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+User Management Application
+This section provides an overview of the application, stating that it's a user management system built with Angular.
+
+Features
+This section lists the key features of the application:
+
+User-insert Component: This component handles adding or editing user records. It provides a form for users to input their information and includes validation for required fields, email format, and phone number format. It also checks if the entered email already exists.
+
+User-List Component: This component displays a grid of all user records. It allows users to edit or delete user records.
+
+Validation: The application checks whether a user already exists before adding a new user.
+
+Data Passing: It uses a DataService to pass data between components, facilitating communication between them.
+
+Styling: Basic styling is applied to the application using Bootstrap to make it visually appealing.
