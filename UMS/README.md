@@ -48,7 +48,7 @@ getUserList(): Returns an observable stream of user data.
 deleteUser(userId: any): Deletes a user with the specified ID.
 generateUniqueUserID(): Generates a unique user ID.
 addUser(user: any): Adds a new user to the data service.
-updateUser(user: User): Updates an existing user's information.
+updateUser(user: User): Updates an existing user's information. 
 saveUsersToLocalStorage(): Saves user data to the local storage.
 getUserById(userId: string): User | undefined: Retrieves a user by their ID.
 checkUserexist(useremail: string): Checks if a user with the specified email address already exists.
